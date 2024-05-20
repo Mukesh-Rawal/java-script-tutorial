@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Js Scope</title>
+</head>
+<body>
+    <h2> Java-script Scope</h2>
+
+    <script>
+        console.log('Check if you can drive');
+        let age = 70;
+
+        if  (age > 18 & age <65){
+            let userMessage = 'You can drive'
+            console.log(userMessage)
+        }
+        
+        else if  (age > 65){
+            console.log('Ask someone to drive')
+        }
+        
+        else{
+            console.log('Pleale use bicycle')
+        }
+        console.log(userMessage)
+    </script>
+</body>
+</html>

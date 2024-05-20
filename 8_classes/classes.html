@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Classes</title>
+</head>
+<body>
+    <h2>Classes</h2>
+    <script>
+        //Object
+        let employees = {
+            calcTax() {
+                console.log('Tax is 10%')
+            },
+        };
+        let empRahul = {
+            salary: '30k',
+            age: 34,
+        };
+        let emp2 = {
+            calcTax() {
+                console.log('Tax is 20%');
+            },
+            salary: '40k',
+            age: 34,
+        };
+        let emp3 = {
+            salary: '50k',
+
+        };
+        let emp4 = {
+            salary: '100k',
+        };
+
+        empRahul.__proto__ = employees;
+        emp2.__proto__ = employees;
+        emp3.__proto__ = employees;
+        emp4.__proto__ = employees;
+
+
+        //Class
+        class Employee {
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+            hello () {
+                console.log('Class Practice');
+            }
+            
+        }
+        let newEmp = new Employee('Mukesh', 34);
+    </script>
+</body>
+</html>

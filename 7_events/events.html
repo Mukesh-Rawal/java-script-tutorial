@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Events</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(105, 105, 209);
+        }
+
+        button {
+            height: 30px;
+            width: 100pxpx;
+            border-radius: 5px;
+            margin: 10px;
+            background-color: rgb(11, 185, 84);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Events</h2>
+    <button id="btn1" onclick=""> Click Here</button>
+
+
+    <div onmouseover="console.log('You are inside the div')">This is div</div>
+
+
+    <script>
+        let btn = document.querySelector('#btn1');
+
+        btn.onclick = (e) => {      // e = event object
+            // console.log(e);
+            // console.log(e.type);
+            // console.log(e.target);
+            // console.log(e.clientX, e.clientY);
+
+            console.log('Clicked');
+            let a = 5;
+            a++
+            console.log(a);
+        };
+
+
+        btn.addEventListener('click', () => {
+            console.log('Button was cliked')
+        });
+
+
+        let btnClick = () => {
+            console.log('Button was cliked again');
+        };
+
+
+        btn.addEventListener('click', btnClick);
+
+
+        btn.removeEventListener('click', btnClick);
+
+
+        function random(number) {
+            return Math.floor(Math.random() * number);
+        };
+
+
+        function bgChange() {
+            let rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+            return rndCol;
+        };
+
+        
+        btn.addEventListener("click", (event) => {
+            event.target.style.backgroundColor = bgChange();
+        });
+    </script>
+</body>
+
+</html>

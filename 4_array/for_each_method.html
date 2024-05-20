@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>For Each</title>
+</head>
+<body>
+    <h2>For Each Meathod</h2>
+
+    <script>
+        let arr = [1,2,3,4,5,6,7];
+
+        arr.forEach(function printVal(val){
+            console.log(val);
+
+        });
+
+        // Or
+        {
+            let arr = ['Hello','World'];
+
+            arr.forEach((val) => {
+                console.log(val.toUpperCase());
+            });
+
+        }
+
+        {
+            console.log('Calculate Square');
+            let num = [2,4,5,6,7];
+            let sqr = (num) => {
+                console.log(num*num);
+            };
+            num.forEach(sqr);
+        }
+
+    </script>
+</body>
+</html>

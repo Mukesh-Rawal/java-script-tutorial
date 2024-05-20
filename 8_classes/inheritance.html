@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Classes</title>
+</head>
+<body>
+    <h2>Inheritance</h2>
+    <script>
+        //Class
+        class Person{
+            constructor() {
+                this.gender = 'Male/ Female/ Other';
+            }
+            eat(){
+                console.log('Person eats');
+            }
+
+            sleep(){
+                console.log('Person sleeps');
+            }
+        }
+
+
+        class Employee extends Person{
+            constructor(name,age){
+
+                super();        // To invoke parent class constructor
+
+                this.empName = name;
+                this.empAge = age;
+            }
+            hello() {
+                super.eat();
+                console.log('Class Practice');
+            }
+            
+        }
+        let newEmp = new Employee('Rahul', '23');
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Classes</title>
+</head>
+<body>
+    <h2>Classes</h2>
+    <script>
+        //Class
+        class Employee {
+            constructor(name,age){
+                this.empName = name;
+                this.empAge = age;
+            }
+            hello () {
+                console.log('Class Practice');
+            }
+            
+        }
+        let newEmp = new Employee('Mukesh', 34);
+
+
+        class Car {
+            Info(){
+                console.log('This is car brand');
+            }
+            setBrand(brand){
+                this.brandName = brand;
+            }
+        }
+
+        let scorpio = new Car();
+        scorpio.setBrand('Mahendra');
+
+        let nexon = new Car();
+        nexon.setBrand('TATA');
+
+
+        class Vihicles {
+            constructor(brand, mileage){
+                console.log('Creating new Objects');
+                this.brandName = brand;
+                this.carMileage = mileage;
+            }
+            Info(){
+                console.log('This is car brand');
+            }
+        }
+
+        let xuv = new Vihicles('Mahendra', '10kmpl');
+        console.log(xuv);
+        let tiago = new Vihicles('Tata', '18kmpl');
+        console.log(tiago);
+
+
+
+    </script>
+</body>
+</html>

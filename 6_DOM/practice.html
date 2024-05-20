@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        .para{
+            background-color: aqua;
+            border: 2px solid black;
+            margin-top: 10px;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>This is para</p>
+
+    <div id="div1" class="para">
+        Div1
+    </div>
+
+    <div id="div1" class="para">
+        Div1
+    </div>
+
+    <div id="div1" class="para">
+        Div3
+    </div>
+
+    <div id="div1" class="para">
+        Div4
+    </div>
+
+    <script>
+        const box = document.querySelectorAll('.para');
+        box[0].innerText = 'This is div 1';
+        box[3].innerText = 'This is last div'
+
+        let paraText = document.querySelector('p').innerText = 'This is new para';
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>If Alternative</title>
+</head>
+<body>
+    <h2>Ternary Operators</h2>
+    <h2>Gaurd Operator</h2>
+    <h2>Default Operator</h2>
+
+
+    <script>
+      {
+        //Ternary operator
+        let age = 32;
+        let result;
+
+        if (age > 18) {
+          result = 'Adult';
+        } else {
+          result = 'Kid'
+        }
+        console.log(result)
+      }
+
+      {
+        // Ternary Operator or One-Line if else
+        let age = 12;
+        let result = age > 18 ? 'Adult' : 'Kid';
+        console.log(result);
+      }
+
+      {
+        //Guard operator
+        let age = 0;
+        let finalAge = age || 18;
+
+        console.log(age);
+        console.log(finalAge);
+      }
+
+      //Default operator
+      let age = 0;
+      let finalAge = age ?? 18;
+      console.log(age);
+      console.log(finalAge);
+
+    </script>
+</body>
+</html>

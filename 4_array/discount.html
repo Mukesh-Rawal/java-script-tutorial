@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice </title>
+</head>
+<body>
+    <h2>Array Practice</h2>
+
+    <script>
+        let arr = [200,500,435,655,700];
+
+        for (let i=0; i < arr.length; i++){
+            let offer = arr[i] / 10;
+            arr[i] -= offer;
+        }
+        console.log(`Discounted value is ${arr}`);
+        console.log(arr);
+
+        // Or 
+        {
+            let arr = [200,500,435,655,700];
+            let i = 0;
+            for (let val of arr){
+                console.log(`Price is ${arr[i]}`);
+                let offer = arr[i] / 10;
+                arr[i] = arr[i] - offer;
+                console.log(`Discounted value is ${arr[i]}`);
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

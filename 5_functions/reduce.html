@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reduce Function</title>
+</head>
+<body>
+    <h2>Reduce Function</h2>
+
+    <script>
+        let arr = [2,4,2,22,1,9];
+
+        const output = arr.reduce((result, val) => {
+            return result+val;
+        });
+        console.log(output);
+
+        {
+            console.log('Largest Number');
+            let arr = [2,4,2,22,1,9];
+
+            const output = arr.reduce((result, val) => {
+                return result > val  ? result : val;
+            });
+            console.log(output);
+        }
+
+        {
+            console.log('Factorial: ')
+            let num = prompt('Enter a num to find factorial');
+            let arr = [];
+            let factorial = arr.reduce((result, val) => {
+                return result * val;
+            });
+            console.log(factorial);
+        }
+    </script>
+</body>
+</html>

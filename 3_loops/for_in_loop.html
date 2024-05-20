@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>For loop</title>
+</head>
+<body>
+    <h2>For In loop</h2>
+    <p>For In loop generally used for Objects</p>
+
+    <script>
+        let student ={
+            name: 'Rahul',
+            age: 21,
+            isPass: true,
+            collage: 'Tech World PS',
+        };
+
+        for (let key in student){
+            console.log("key:", key, "value: ", student[key]);
+        }
+    </script>
+</body>
+</html>

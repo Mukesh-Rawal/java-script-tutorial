@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    <h2>Callback</h2>
+
+    <script>
+        function getData(dataId, getNextData){
+            //2s
+            setTimeout(() => {
+                console.log('data',dataId);
+                if(getNextData){
+                    getNextData();
+                }
+            }, 2000);
+        }
+
+        // Callbackhell
+        getData(1, () => {
+            getData(2, () => {
+                getData(3);
+            });
+        })
+    </script>
+</body>
+</html>

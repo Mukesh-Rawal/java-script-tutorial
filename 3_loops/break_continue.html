@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>For loop</title>
+</head>
+<body>
+    <h2>For loop</h2>
+
+    <script>
+        
+        for(let num=1; num <=50; num++){
+            if (num==30){
+                console.log(num)
+                break;
+            }
+        }
+
+        let arr = [3,2,5,44,5.5,3];
+
+        for (let i=0; i < arr.length; i++){
+           if (arr[i] == 44){
+            console.log(`Number found at index ${i}`);
+            break;
+           }
+           console.log('still looking');
+        }
+
+
+        for(let num=1; num <=22; num++){
+            if (num % 2 == 0){
+                continue;
+            }
+            console.log(num)
+        }
+
+    </script>
+</body>
+</html>

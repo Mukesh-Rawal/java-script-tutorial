@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>While loop</title>
+</head>
+<body>
+    <h2>While loop</h2>
+
+    <script>
+        let num=[9,7,5,8,6.5,9]; // Initialization
+        
+        let sum = 0;
+        for (let i=0; i < num.length; i++){
+            sum = sum+num[i];
+        }
+        console.log(`Sum of the array is ${sum}`);
+
+        let square = [];
+        for (let i=0; i < num.length; i++){
+            // square[i] = num[i] * num[i];
+            square.push(num[i] * num[i]);
+
+        }
+        console.log(`Square is ${square}`);
+    </script>
+</body>
+</html>

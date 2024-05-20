@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        .para{
+            background-color: aqua;
+            border: 2px solid black;
+            margin-top: 10px;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="paragraph">This is para</p>
+
+    <div id="div1" class="para">
+        Div1
+    </div>
+
+    <div id="div2" class="para">
+        Div2
+    </div>
+
+    <div id="div3" class="para">
+        Div3
+    </div>
+
+    <div id="div4" class="para">
+        Div4
+    </div>
+
+    
+    <script>
+        let box = document.querySelectorAll('.para');
+        box[0].innerText = 'This is div 1';
+        box[3].innerText = 'This is last div'
+
+
+        let para = document.querySelector('p');
+        console.log(para);
+        let id = para.getAttribute('id');
+        console.log(id);
+
+        let newDiv = document.querySelector('div');
+        console.log(newDiv);
+        newDiv.setAttribute('class', 'newClass');
+        newDiv.style.backgroundColor ="yellow";
+
+
+        let newBtn = document.createElement('button');
+        newBtn.innerText = 'Click here';
+        console.log(newBtn)
+
+        let btnDiv = document.querySelector('#div3');
+        btnDiv.append(newBtn);
+        console.log(btnDiv);
+        console.log(btnDiv.classList);
+
+
+        let removeDiv = document.querySelector('#div2');
+        removeDiv.remove();
+
+    </script>
+</body>
+
+</html>

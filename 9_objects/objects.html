@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Objects</title>
+</head>
+<body>
+    <h2>Objects</h2>
+    <script>
+        let product = {
+            company : 'Apple',
+            item_name : 'Iphone14',
+            price : '800',
+            'is-available' : 'yes',
+            displayPrice: function(){
+                console.log(`Price of the product is Rs${product.price}  `) //CAN USE THIS.PRICE INSTEAD OF PRODUCT.PRICE
+            }
+        }
+        console.log(product)
+        console.log(product.item_name)
+        console.log(product.company)
+        product.company = 'Sony'
+
+        console.log(product['price'])
+        console.log(product)
+        console.log(product['is-available'])
+
+        let availability = 'is-available'
+        console.log(product[availability])
+
+        delete product.company
+        console.log(product)
+
+        // Inside Objects
+        product.displayPrice()
+
+        //  Autoboxing: Autometic conversion of Primitives(numbers and string) 
+        console.log(`This is js code`.length)
+
+        // Objects Reference
+        let a = 5;
+        let b=a;
+        console.log(`${a}, ${b}`)
+        b=8;
+        console.log(`${a}, ${b}`)
+
+        let x = {num:6};
+        y = x;
+        console.log(`x=x${x.num}, y=${x.num}`);
+        x.num = 9;
+        console.log(`x=x${x.num}, y=${x.num}`);
+
+        //
+        let p = {num: 5};
+        let c = {num: 5};
+        console.log(p==c); // False bcz references are different
+
+        //
+        let {price, item_name} = product;
+        console.log(item_name);
+        console.log(price);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.bag_add_btn{
+    background-color: rgb(64, 194, 64);
+    height: 40px;
+    width: 110px;
+    border-radius: 10px;
+
+}
+.wish_add_btn{
+    border-radius: 10px;
+    height: 40px;
+    width: 120px;
+}
+.bag_btn{
+    border-radius: 10px;
+    height: 40px;
+    width: 120px;
+}

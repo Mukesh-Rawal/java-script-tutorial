@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="practice.css">
+    <title>Practice</title>
+
+</head>
+<body>
+    <main>
+        <button class="bag_add_btn" onclick="cartQuantity++;
+        document.querySelector('#cart_summary').innerText = `Your bag has${cartQuantity} items`
+        ">Add to bag</button>
+
+        <button class="wish_add_btn" onclick="cartQuantity--;
+        document.querySelector('#cart_summary').innerText = `Your bag has${cartQuantity} items`
+        ">Move to Wishlist</button>
+
+        <button class="bag_btn" onclick="cartQuantity += 2;
+        document.querySelector('#cart_summary').innerText = `Your bag has${cartQuantity} items`
+        ">Add 1+1 sale items</button>
+        <br>
+        <br>
+
+        <h2 id="cart_summary"></h2>
+
+        <script>
+            console.log('Welcome to js practice set');
+            let cartQuantity = 0;
+            document.querySelector('#cart_summary').innerText = `Your bag has ${cartQuantity} items`;
+        </script>
+    </main>
+    
+</body>
+</body>
+</html>
